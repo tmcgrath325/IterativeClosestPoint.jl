@@ -1,6 +1,12 @@
 using IterativeClosestPoint
+using CoordinateTransformations
+using Distances
 using Test
 
-@testset "IterativeClosestPoint.jl" begin
-    # Write your tests here.
+@testset "Kabsch" begin
+    
+end
+
+@testset "point-to-point ICP" begin
+    
 end
