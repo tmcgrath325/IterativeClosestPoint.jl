@@ -16,7 +16,7 @@ function kabsch_centered(P,Q)
 end
 
 # translation moving centroid to origin
-center_translation(A) = Translation(-mean(A, dims=2))
+center_translation(A) = Translation([-mean(A, dims=2)...])
 
 # transform DxN matrices
 function (tform::Translation)(A::AbstractMatrix)
